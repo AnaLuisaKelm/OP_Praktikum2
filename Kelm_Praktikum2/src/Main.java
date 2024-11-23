@@ -1,4 +1,4 @@
-package main;
+
 
 import gui.TeeladenControl;
 import javafx.application.Application;

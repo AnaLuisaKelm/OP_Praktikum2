@@ -201,7 +201,7 @@ public class TeeladenView {
 	    
 	    void zeigeFehlermeldungsfensterAn(String meldung){
 	       	new MeldungsfensterAnzeiger(AlertType.ERROR,
-	        	"Fehler", meldung).zeigeMeldungsfensterAn();
+	        	"Fehler", meldung).zeigeMeldungsfensterAn(); 
 	    }
 
 }

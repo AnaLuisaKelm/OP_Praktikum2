@@ -239,3 +239,18 @@ import ownUtil.*;
 //    }
 
 //}
+
+// MIT BUFFERED WRITER SCHREIBEN
+//BufferedWriter aus = new BufferedWriter(new FileWriter("Artikel.txt"));
+//aus.write(anzahl + "");
+//aus.newLine();
+//for(int i = 0; i < anzahl; i++) {
+//	aus.write(artikel[i].getArtikelnummer() + "");
+//	aus.newLine();
+//	aus.write(artikel[i].getArtikelname());
+//	aus.newLine();
+//	aus.write(artikel[i].getBasispreis() + "");
+//	aus.newLine();
+//}    
+//aus.close();
+//}

@@ -74,7 +74,7 @@ public class Tee {
   		return "" + this.getArtikelnummer() + trenner 
   			+ this.getBezeichnung() + trenner
   		    + this.getKategorie() + trenner
-  		    + this.getMitKoffein() + trenner + "\n"
+  		    + this.getMitKoffein() + trenner
   		    + this.getEnthalteneKraeuterAlsString(trenner) + "\n";
   	}
 }

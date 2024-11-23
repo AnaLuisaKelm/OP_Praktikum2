@@ -1,9 +1,5 @@
 package gui;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
 
 import business.Tee;
@@ -53,6 +49,8 @@ public class TeeladenControl {
 		}catch(Exception exc){
 			view.zeigeFehlermeldungsfensterAn(
 				"Unbekannter Fehler beim Lesen!");
+			exc.printStackTrace();
+
 		}
 	}
 	
@@ -67,6 +65,8 @@ public class TeeladenControl {
 		catch(Exception exc){
 			view.zeigeFehlermeldungsfensterAn(
 				"Unbekannter Fehler beim Speichern!");
+			exc.printStackTrace();
+
 		}
 	}
 
