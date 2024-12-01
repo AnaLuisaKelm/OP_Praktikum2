@@ -1,4 +1,4 @@
-package gui;
+package guiTeeladen;
 
 import business.TeeladenModel;
 import javafx.event.ActionEvent;
@@ -184,7 +184,7 @@ public class TeeladenView {
 		    });
 	    }
 	   
-	   private void zeigeTeeladenAn(){
+	   void zeigeTeeladenAn(){
 	    	if(this.model.getTee() != null){
 	    		txtAnzeige.setText(
 	    			this.model.getTee().gibTeeZurueck(' '));

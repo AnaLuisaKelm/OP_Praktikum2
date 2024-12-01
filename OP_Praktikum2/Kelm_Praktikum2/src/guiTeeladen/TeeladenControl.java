@@ -1,18 +1,19 @@
-package gui;
+package guiTeeladen;
 
 import java.io.IOException;
 
 import business.Tee;
 import business.TeeladenModel;
 import javafx.stage.Stage;
+import observer.Observer;
 
-public class TeeladenControl {
+public class TeeladenControl implements Observer {
 	
 	private TeeladenView view;
 	private TeeladenModel model;
 	
 	public TeeladenControl(Stage primaryStage) {
-		this.model = new TeeladenModel();
+		this.model = TeeladenModel.getInstance();
 		this.view = new TeeladenView(primaryStage, this, this.model);
 		
 	}
@@ -30,6 +31,7 @@ public class TeeladenControl {
        	catch(Exception exc){
        		view.zeigeFehlermeldungsfensterAn(exc.getMessage());
      	}
+    	
     }
 	
 	void leseAusDatei(String typ){
@@ -61,6 +63,12 @@ public class TeeladenControl {
 			exc.printStackTrace();
 
 		}
+	}
+
+	@Override
+	public void update() {
+		view.zeigeTeeladenAn();
+		
 	}
 
 
